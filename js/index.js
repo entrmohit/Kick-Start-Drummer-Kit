@@ -1,6 +1,4 @@
-
-var snd = [];
-var s = ["crash.mp3","kick-bass.mp3","snare.mp3","tom-1.mp3","tom-2.mp3","tom-3.mp3","tom-4.mp3"];
+// n ids the no. of different parts of a drum kit : 1.Breakables: Sticks, various cymbals, snare drum, throne (stool) and sometimes the bass drum pedal. 2.Shells: Bass drum and toms. 3.Extensions: Cowbell, tambourine, chimes, any other instrument not part of the standard kit. 4.Hardware: Cymbal stands, drum stands, pedals.
 var n=document.querySelectorAll(".drum").length;
 for(var j=0;j<n;j++){
   document.querySelectorAll(".drum")[j].addEventListener("click", function(){
@@ -17,31 +15,31 @@ for(var j=0;j<n;j++){
 function makeSound(key){
   switch(key){
     case "w":
-      var audio=new Audio("sounds/crash.mp3");
+      var audio=new Audio("https://entrmohit.github.io/Kick-Start-Drummer-Kit/sounds/crash.mp3");
       audio.play();
       break;
     case "a":
-      var audio=new Audio("sounds/kick-bass.mp3");
+      var audio=new Audio("https://entrmohit.github.io/Kick-Start-Drummer-Kit/sounds/kick-bass.mp3");
       audio.play();
       break;
     case "s":
-      var audio=new Audio("sounds/snare.mp3");
+      var audio=new Audio("https://entrmohit.github.io/Kick-Start-Drummer-Kit/sounds/snare.mp3");
       audio.play();
       break;
     case "d":
-      var audio=new Audio("sounds/tom-1.mp3");
+      var audio=new Audio("https://entrmohit.github.io/Kick-Start-Drummer-Kit/sounds/tom-1.mp3");
       audio.play();
       break;
     case "j":
-      var audio=new Audio("sounds/tom-2.mp3");
+      var audio=new Audio("https://entrmohit.github.io/Kick-Start-Drummer-Kit/sounds/tom-2.mp3");
       audio.play();
       break;
     case "k":
-      var audio=new Audio("sounds/tom-3.mp3");
+      var audio=new Audio("https://entrmohit.github.io/Kick-Start-Drummer-Kit/sounds/tom-3.mp3");
       audio.play();
       break;
     case "l":
-      var audio=new Audio("sounds/tom-4.mp3");
+      var audio=new Audio("https://entrmohit.github.io/Kick-Start-Drummer-Kit/sounds/tom-4.mp3");
       audio.play();
       break;
       default:
